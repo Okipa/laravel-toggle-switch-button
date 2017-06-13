@@ -1,0 +1,83 @@
+.swipe-group {
+  position: relative;
+
+  .swipe-label {
+    width: auto;
+    margin: 0 10px;
+    height: 26px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  &.input-group {
+
+    .swipe-label {
+      position: relative;
+      font-size: $font-size-small;
+      height: inherit;
+      line-height: 25px;
+      margin: 0 10px 0 0;
+      @include border-radius(0 $input-border-radius $input-border-radius 0);
+      cursor: inherit;
+    }
+
+    label.swipe-btn {
+      margin-top: 6px;
+    }
+  }
+
+  .swipe-action-icon {
+    height: 26px;
+    position: absolute;
+    top: 6px;
+    left: 55px;
+  }
+}
+
+.swipe {
+  display: none;
+
+  + .swipe-btn {
+    margin: 0;
+    outline: 0;
+    width: 50px;
+    height: 26px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    background: #ccc;
+    border-radius: 2em;
+    padding: 2px;
+    @include transition(0.4s ease);
+
+    &:after, &:before {
+      position: relative;
+      display: block;
+      content: "";
+      width: 50%;
+      height: 100%;
+    }
+
+    &:after {
+      left: 0;
+      border-radius: 50%;
+      background: #fff;
+      @include transition(0.2s ease);
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &:checked {
+
+    + .swipe-btn {
+      background: $btn-primary-bg;
+
+      &:after {
+        left: 50%;
+      }
+    }
+  }
+}
