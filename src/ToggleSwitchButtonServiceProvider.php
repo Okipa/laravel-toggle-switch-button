@@ -3,7 +3,7 @@
 namespace Okipa\LaravelToggleSwitchButton\Laravel;
 
 use Illuminate\Support\ServiceProvider;
-use AcidSolutions\ToggleSwitchButton\ToggleSwitchButton;
+use Okipa\ToggleSwitchButton;
 
 class ToggleSwitchButtonServiceProvider extends ServiceProvider
 {
@@ -25,8 +25,10 @@ class ToggleSwitchButtonServiceProvider extends ServiceProvider
             __DIR__.'/../config/toggle_switch_button.php', 'toggle_switch_button'
         );
         
-        $this->app->singleton('toggle_switch_button', function () {
-            return new ToggleSwitchButton();
+        $this->app->singleton('Okipa\ToggleSwitchButton', function ($app) {
+            $tableList = $app->make(ToggleSwitchButton::class);
+            
+            return $tableList;
         });
     }
 }
