@@ -1,5 +1,5 @@
 @if(config('toggle_switch_button.styles.load_from_blade'))
-    @include('toggle_switch_button::toggle-switch-style')
+    @include('toggle_switch_button::toggle-switch-styles')
 @endif
 
 <div class="@if($label_icon || $label_string)input-group @endif switch-group">
