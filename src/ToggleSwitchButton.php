@@ -9,9 +9,8 @@ class ToggleSwitchButton
 {
     public function render(string $input_name, bool $input_checked = false, string $label_icon = null, string $label_string = null)
     {
-        $accepted_styles_configs = ['blade', 'sass'];
-        if(!in_array(config('toggle_switch_button::styles_mode'), $accepted_styles_configs)){
-            throw new InvalidArgumentException('Wrong "' . config('toggle_switch_button::styles_mode') . '" value given in your "config/toggle_switch_button.php" file. Accepted values : "blade" or "sass"');
+        if(!is_bool(config('toggle_switch_button::styles_mode'))){
+            throw new InvalidArgumentException('Wrong ' . json_encode(config('toggle_switch_button::styles_mode')) . ' value given from your "config/toggle_switch_button.php" file. The value should be "true" or "false".');
         }
         
         return View::make('toggle_switch_button::toggle-switch-button', [

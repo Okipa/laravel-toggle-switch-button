@@ -1,4 +1,4 @@
-@if(config('toggle_switch_button::styles_mode') === 'blade')
+@if(config('toggle_switch_button.styles.load_from_blade'))
     @include('toggle_switch_button::toggle-switch-style')
 @endif
 

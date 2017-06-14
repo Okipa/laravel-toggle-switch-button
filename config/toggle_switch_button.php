@@ -1,5 +1,7 @@
 <?php
 
 return [
-    'styles_mode' => 'blade' // blade | sass
+    'styles' => [
+        'load_from_blade' => true,
+    ],
 ];
