@@ -59,5 +59,4 @@ Publish the package blade template file in your project :
 ```
 php artisan vendor:publish --tag=toggle_switch_button_template
 ```
-To customize the laravel-toggle-switch-button template, change the content from your `resources/views/template/toggle_switch_button.blade.php` file.  
-Make sure that you have published the package views before.
+Then, change the content from your `resources/views/template/toggle_switch_button.blade.php` file.  
