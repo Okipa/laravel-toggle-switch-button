@@ -21,10 +21,10 @@ $this->app->register(Okipa\LaravelToggleSwitchButton\ToggleSwitchButtonServicePr
 Simply call the toggle switch button rendering in your view as precised in the following example :
 ```
 {!! ToggleSwitchButton::render(
-    'title',                                                // (required) string $input_name : must be unique on the page, also used for the input id generation
-    config('settings.image_optimization'),                  // (optional) bool $input_checked : determine if your toggle switch button is checked or not
-    '<i class="fa fa-compress" aria-hidden="true"></i>',    // (optional) string $label_icon : set the icon that will appear before the toggle switch button
-    trans('global.action.activate')                         // (optional) string $label_string : set the label that will appear before the toggle switch button
+    'title', // (required) string $input_name : must be unique on the page, also used for the input id generation
+    config('settings.image_optimization'), // (optional) bool $input_checked : determine if your toggle switch button is checked or not
+    '<i class="fa fa-compress" aria-hidden="true"></i>', // (optional) string $label_icon : set the icon that will appear before the toggle switch button
+    trans('global.action.activate') // (optional) string $label_string : set the label that will appear before the toggle switch button
 ) !!}
 ```
 
