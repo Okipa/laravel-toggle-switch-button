@@ -12,15 +12,15 @@ class ToggleSwitchButtonServiceProvider extends ServiceProvider
         
         $this->publishes([
             __DIR__ . '/../config/toggle_switch_button.php' => config_path('toggle_switch_button.php'),
-        ], 'toggle_switch_button_config');
+        ], 'toggle-switch-button::config');
     
         $this->publishes([
             __DIR__ . '/../views' => resource_path('views/toggle_switch_button/styles'),
-        ], 'toggle_switch_button_styles');
+        ], 'toggle-switch-button::styles');
     
         $this->publishes([
             __DIR__ . '/../views' => resource_path('views/toggle_switch_button/template'),
-        ], 'toggle_switch_button_template');
+        ], 'toggle-switch-button::template');
     }
     /**
      * {@inheritDoc}

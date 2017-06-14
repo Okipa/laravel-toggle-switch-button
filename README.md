@@ -40,14 +40,14 @@ To customize the laravel-toggle-switch-button styles, you have 2 possible soluti
 ### Using inline CSS
 Publish the package blade styles file in your project :
 ```
-php artisan vendor:publish --tag=toggle_switch_button_styles
+php artisan vendor:publish --tag=toggle-switch-button::styles
 ```
 Change the CSS content from your `resources/views/styles/toggle_switch_button.blade.php` file.
 
 ### Importing SASS (recommended method)
 Publish the package configuration file in your project :
 ```
-php artisan vendor:publish --tag=toggle_switch_button_config
+php artisan vendor:publish --tag=toggle-switch-button::config
 ```
 Set the `styles.load_from_blade` value to false in your `config/toggle_switch_button.php` file.  
 Then, import the package sass in your page scss page file :
@@ -63,6 +63,6 @@ $toggle_switch_button_checked_background-color: $brand-primary; // default #337a
 ## Customize the template
 Publish the package blade template file in your project :
 ```
-php artisan vendor:publish --tag=toggle_switch_button_template
+php artisan vendor:publish --tag=toggle-switch-button::template
 ```
 Then, change the content from your `resources/views/template/toggle_switch_button.blade.php` file.  
