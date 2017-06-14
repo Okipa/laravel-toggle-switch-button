@@ -1,4 +1,4 @@
-@if($styles_view = config('toggle_switch_button::styles.view'))
+@if(config('toggle_switch_button::styles_mode') === 'blade')
     @include('toggle_switch_button::' . $styles_view)
 @endif
 

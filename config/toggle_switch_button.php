@@ -1,7 +1,5 @@
 <?php
 
 return [
-    'styles' => [
-        'view' => 'toggle-switch-style'
-    ],
+    'styles_mode' => 'blade' // blade | sass
 ];

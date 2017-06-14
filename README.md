@@ -23,3 +23,11 @@ php artisan vendor:publish --tag=toggle_switch_button
 ```
 
 ## Usage
+
+## Styles
+To customize the laravel-toggle-switch-button styles, you have 3 possible solutions.
+1. Changing the CSS content of your `resources/views/toggle_switch_button.blade.php` file.
+2. Setting the `sass` value for the `styles_mode` config in your `config/toggle_switch_button.php` file and including the package sass in your page sass :
+```
+
+```
