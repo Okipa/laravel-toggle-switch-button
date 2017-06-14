@@ -17,11 +17,6 @@ $this->app->register(Okipa\LaravelToggleSwitchButton\ToggleSwitchButtonServicePr
 'ToggleSwitchButton'  => Okipa\LaravelToggleSwitchButton\Facades\ToggleSwitchButton::class,
 ```
 
-4. Publish the package configuration and views files in your project :
-```
-php artisan vendor:publish --tag=toggle_switch_button
-```
-
 ## Usage
 Simply call the toggle switch button rendering in your view as precised in the following example :
 ```
@@ -37,10 +32,17 @@ Simply call the toggle switch button rendering in your view as precised in the f
 To customize the laravel-toggle-switch-button styles, you have 2 possible solutions :
 
 ### Using inline CSS
-Change the CSS content from your `resources/views/toggle_switch_button.blade.php` file.  
-Make sure that you have published the package views before and that the `styles.load_from_blade` value in your `config/toggle_switch_styles.php` file is `true`
+Publish the package blade styles file in your project :
+```
+php artisan vendor:publish --tag=toggle_switch_button_styles
+```
+Change the CSS content from your `resources/views/styles/toggle_switch_button.blade.php` file.
 
 ### Importing SASS (recommended method)
+Publish the package configuration file in your project :
+```
+php artisan vendor:publish --tag=toggle_switch_button_config
+```
 Set the `styles.load_from_blade` value to false in your `config/toggle_switch_button.php` file.  
 Then, import the package sass in your page scss page file :
 ```
@@ -53,5 +55,9 @@ $toggle_switch_button_checked_background-color: $brand-primary; // default #337a
 ```
 
 ## Customize the template
-To customize the laravel-toggle-switch-button template, change the content from your `resources/views/toggle_switch_button.blade.php` file.  
+Publish the package blade template file in your project :
+```
+php artisan vendor:publish --tag=toggle_switch_button_template
+```
+To customize the laravel-toggle-switch-button template, change the content from your `resources/views/template/toggle_switch_button.blade.php` file.  
 Make sure that you have published the package views before.
