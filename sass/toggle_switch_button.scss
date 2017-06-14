@@ -1,7 +1,10 @@
-.swipe-group {
+$toggle_switch_button_unchecked_background-color: #ccc !default;
+$toggle_switch_button_checked_background-color: #337ab7 !default;
+
+.switch-group {
   position: relative;
 
-  .swipe-label {
+  .switch-label {
     width: auto;
     margin: 0 10px;
     height: 26px;
@@ -11,22 +14,24 @@
 
   &.input-group {
 
-    .swipe-label {
+    .switch-label {
       position: relative;
-      font-size: $font-size-small;
+      font-size: inherit;
       height: inherit;
       line-height: 25px;
       margin: 0 10px 0 0;
-      @include border-radius(0 $input-border-radius $input-border-radius 0);
+      -webkit-border-radius: 0 0 0 0;
+      -moz-border-radius: 0 0 0 0;
+      border-radius: 0 0 0 0;
       cursor: inherit;
     }
 
-    label.swipe-btn {
+    label.switch-btn {
       margin-top: 6px;
     }
   }
 
-  .swipe-action-icon {
+  .switch-action-icon {
     height: 26px;
     position: absolute;
     top: 6px;
@@ -34,10 +39,10 @@
   }
 }
 
-.swipe {
+.switch {
   display: none;
 
-  + .swipe-btn {
+  + .switch-btn {
     margin: 0;
     outline: 0;
     width: 50px;
@@ -45,10 +50,13 @@
     position: relative;
     cursor: pointer;
     user-select: none;
-    background: #ccc;
+    background: $toggle_switch_button_unchecked_background-color;
     border-radius: 2em;
     padding: 2px;
-    @include transition(0.4s ease);
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+
 
     &:after, &:before {
       position: relative;
@@ -62,7 +70,9 @@
       left: 0;
       border-radius: 50%;
       background: #fff;
-      @include transition(0.2s ease);
+      -webkit-transition: 0.2s ease;
+      -o-transition: 0.2s ease;
+      transition: 0.2s ease;
     }
 
     &:before {
@@ -72,8 +82,8 @@
 
   &:checked {
 
-    + .swipe-btn {
-      background: $btn-primary-bg;
+    + .switch-btn {
+      background: $toggle_switch_button_checked_background-color;
 
       &:after {
         left: 50%;
