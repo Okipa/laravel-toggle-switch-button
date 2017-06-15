@@ -66,4 +66,4 @@ Publish the package blade templates file in your project :
 ```
 php artisan vendor:publish --tag=toggle-switch-button::views
 ```
-Then, change the content from your `resources/views/toggle-switch-button/switch-button.blade.php` file.  
+Then, change the content from your `resources/views/vendor/toggle-switch-button/switch-button.blade.php` file.  
