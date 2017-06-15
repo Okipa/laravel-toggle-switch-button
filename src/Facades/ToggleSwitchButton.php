@@ -8,6 +8,6 @@ class ToggleSwitchButton extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'toggle_switch_button';
+        return 'toggle-switch-button';
     }
 }

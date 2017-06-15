@@ -1,5 +1,5 @@
-@if(config('toggle_switch_button.styles.load_from_blade'))
-    @include('toggle_switch_button::styles/toggle-switch-styles')
+@if(config('toggle-switch-button.styles.load_from_blade'))
+    @include('toggle-switch-button::styles/styles')
 @endif
 
 <div class="switch-group">

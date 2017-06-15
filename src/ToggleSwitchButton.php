@@ -14,8 +14,8 @@ class ToggleSwitchButton
     public function __construct()
     {
         // we check the config value validity
-        if(!is_bool(config('toggle_switch_button.styles.load_from_blade'))){
-            throw new InvalidArgumentException('Wrong ' . json_encode(config('toggle_switch_button::styles_mode')) . ' value given from your "config/toggle_switch_button.php" file. The value should be "true" or "false".');
+        if(!is_bool(config('toggle-switch-button.styles.load_from_blade'))){
+            throw new InvalidArgumentException('Wrong ' . json_encode(config('toggle-switch-button.styles.load_from_blade')) . ' value given from your "config/toggle-switch-button.php" file. The value should be "true" or "false".');
         }
     }
     
@@ -31,7 +31,7 @@ class ToggleSwitchButton
     public function render(string $input_name, bool $input_checked = null, string $label_icon = null, string $label_string = null)
     {
         // we return the generated html from the blade file
-        return View::make('toggle_switch_button::template/toggle-switch-button', [
+        return View::make('toggle-switch-button::templates/switch-button', [
             'input_name'    => $input_name,
             'input_checked' => $input_checked,
             'label_icon'    => $label_icon,

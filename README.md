@@ -42,17 +42,17 @@ Publish the package blade styles file in your project :
 ```
 php artisan vendor:publish --tag=toggle-switch-button::styles
 ```
-Change the CSS content from your `resources/views/styles/toggle_switch_button.blade.php` file.
+Change the CSS content from your `resources/views/toggle-switch-button/styles/styles.blade.php` file.
 
 ### Importing SASS (recommended method)
 Publish the package configuration file in your project :
 ```
 php artisan vendor:publish --tag=toggle-switch-button::config
 ```
-Set the `styles.load_from_blade` value to `false` in your `config/toggle_switch_button.php` file.  
+Set the `styles.load_from_blade` value to `false` in your `config/toggle-switch-button.php` file.  
 Then, import the package sass in your page scss page file :
 ```
-@import '[target the root vendor directory]/okipa/laravel-toggle-switch-button/sass/toggle_switch_button';
+@import '[target the root vendor directory]/okipa/laravel-toggle-switch-button/sass/toggle-switch-button';
 ```
 You can override the following sass variables **before** your sass import. Check the following example with a bootstrap use :
 ```
@@ -69,4 +69,4 @@ Publish the package blade template file in your project :
 ```
 php artisan vendor:publish --tag=toggle-switch-button::template
 ```
-Then, change the content from your `resources/views/template/toggle_switch_button.blade.php` file.  
+Then, change the content from your `resources/views/template/toggle-switch-button.blade.php` file.  

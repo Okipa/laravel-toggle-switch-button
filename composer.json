@@ -2,6 +2,7 @@
   "name": "okipa/laravel-toggle-switch-button",
   "description": "A customizable toggle switch button generator for Laravel that enables you to simply display it on your projects pages.",
   "keywords": [
+    "okipa",
     "php",
     "toggle",
     "switch",
@@ -20,7 +21,7 @@
   ],
   "require": {
     "php": ">=7.0",
-    "laravel/framework": "~5.2"
+    "laravel/framework": "~5.0"
   },
   "require-dev": {
   },
