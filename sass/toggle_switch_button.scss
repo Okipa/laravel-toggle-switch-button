@@ -1,92 +1,110 @@
+$toggle_switch_button_label_background_color: #eeeeee !default;
+$toggle_switch_button_label_border-color: #ccc !default;
+$toggle_switch_button_label_font-size: inherit !default;
 $toggle_switch_button_unchecked_background-color: #ccc !default;
 $toggle_switch_button_checked_background-color: #337ab7 !default;
+$toggle_switch_button_label_border_radius: 4px !default;
 
 .switch-group {
   position: relative;
+  display: table;
+
+  .switch-icon {
+    display: table-cell;
+    border: 1px solid $toggle_switch_button_label_border-color;
+    background-color: $toggle_switch_button_label_background_color;
+    font-size: $toggle_switch_button_label_font-size;
+    padding: 6px 12px;
+    vertical-align: middle;
+
+    &.end {
+      -webkit-border-top-right-radius: $toggle_switch_button_label_border_radius;
+      -moz-border-radius-topright: $toggle_switch_button_label_border_radius;
+      border-top-right-radius: $toggle_switch_button_label_border_radius;
+      -webkit-border-bottom-right-radius: $toggle_switch_button_label_border_radius;
+      -moz-border-radius-bottomright: $toggle_switch_button_label_border_radius;
+      border-bottom-right-radius: $toggle_switch_button_label_border_radius;
+    }
+
+    &.start {
+      -webkit-border-top-left-radius: $toggle_switch_button_label_border_radius;
+      -moz-border-radius-topleft: $toggle_switch_button_label_border_radius;
+      border-top-left-radius: $toggle_switch_button_label_border_radius;
+      -webkit-border-bottom-left-radius: $toggle_switch_button_label_border_radius;
+      -moz-border-radius-bottomleft: $toggle_switch_button_label_border_radius;
+      border-bottom-left-radius: $toggle_switch_button_label_border_radius;
+
+      + .end {
+        border-left: none;
+      }
+    }
+  }
 
   .switch-label {
-    width: auto;
-    margin: 0 10px;
-    height: 26px;
-    position: absolute;
-    cursor: pointer;
+    @extend .switch-icon;
   }
 
-  &.input-group {
+  .switch-container {
+    display: table-cell;
+    vertical-align: middle;
 
-    .switch-label {
-      position: relative;
-      font-size: inherit;
-      height: inherit;
-      line-height: 25px;
-      margin: 0 10px 0 0;
-      -webkit-border-radius: 0 0 0 0;
-      -moz-border-radius: 0 0 0 0;
-      border-radius: 0 0 0 0;
-      cursor: inherit;
+    &.space-left {
+      padding-left: 10px;
     }
 
-    label.switch-btn {
-      margin-top: 6px;
-    }
-  }
+    .switch-block {
+      height: 26px;
 
-  .switch-action-icon {
-    height: 26px;
-    position: absolute;
-    top: 6px;
-    left: 55px;
-  }
-}
+      .switch {
+        display: none;
 
-.switch {
-  display: none;
+        + .switch-btn {
+          margin: 0;
+          outline: 0;
+          width: 50px;
+          height: 26px;
+          position: relative;
+          cursor: pointer;
+          user-select: none;
+          background: $toggle_switch_button_unchecked_background-color;
+          border-radius: 2em;
+          padding: 2px;
+          -webkit-transition: 0.4s ease;
+          -o-transition: 0.4s ease;
+          transition: 0.4s ease;
 
-  + .switch-btn {
-    margin: 0;
-    outline: 0;
-    width: 50px;
-    height: 26px;
-    position: relative;
-    cursor: pointer;
-    user-select: none;
-    background: $toggle_switch_button_unchecked_background-color;
-    border-radius: 2em;
-    padding: 2px;
-    -webkit-transition: 0.4s ease;
-    -o-transition: 0.4s ease;
-    transition: 0.4s ease;
+          &:after, &:before {
+            position: relative;
+            display: block;
+            content: "";
+            width: 50%;
+            height: 100%;
+          }
 
+          &:after {
+            left: 0;
+            border-radius: 50%;
+            background: #fff;
+            -webkit-transition: 0.2s ease;
+            -o-transition: 0.2s ease;
+            transition: 0.2s ease;
+          }
 
-    &:after, &:before {
-      position: relative;
-      display: block;
-      content: "";
-      width: 50%;
-      height: 100%;
-    }
+          &:before {
+            display: none;
+          }
+        }
 
-    &:after {
-      left: 0;
-      border-radius: 50%;
-      background: #fff;
-      -webkit-transition: 0.2s ease;
-      -o-transition: 0.2s ease;
-      transition: 0.2s ease;
-    }
+        &:checked {
 
-    &:before {
-      display: none;
-    }
-  }
+          + .switch-btn {
+            background: $toggle_switch_button_checked_background-color;
 
-  &:checked {
-
-    + .switch-btn {
-      background: $toggle_switch_button_checked_background-color;
-
-      &:after {
-        left: 50%;
+            &:after {
+              left: 50%;
+            }
+          }
+        }
       }
     }
   }

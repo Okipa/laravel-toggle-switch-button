@@ -1,42 +1,51 @@
 <style>
+
     .switch-group {
         position: relative;
+        display: table;
     }
 
-    .switch-group .switch-label {
-        width: auto;
-        margin: 0 10px;
+    .switch-group .switch-icon, .switch-group .switch-label {
+        display: table-cell;
+        border: 1px solid #ccc;
+        background-color: #eeeeee;
+        font-size: 14px;
+        padding: 6px 12px;
+        vertical-align: middle;
+    }
+
+    .switch-group .switch-icon.end, .switch-group .end.switch-label {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    .switch-group .switch-icon.start, .switch-group .start.switch-label {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .switch-group .switch-icon.start + .end, .switch-group .start.switch-label + .end {
+        border-left: none;
+    }
+
+    .switch-group .switch-container {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .switch-group .switch-container.space-left {
+        padding-left: 10px;
+    }
+
+    .switch-group .switch-container .switch-block {
         height: 26px;
-        position: absolute;
-        cursor: pointer;
     }
 
-    .switch-group.input-group .switch-label {
-        position: relative;
-        font-size: inherit;
-        height: inherit;
-        line-height: 25px;
-        margin: 0 10px 0 0;
-        border-radius: 0 0 0 0;
-        cursor: inherit;
-    }
-
-    .switch-group.input-group label.switch-btn {
-        margin-top: 6px;
-    }
-
-    .switch-group .switch-action-icon {
-        height: 26px;
-        position: absolute;
-        top: 6px;
-        left: 55px;
-    }
-
-    .switch {
+    .switch-group .switch-container .switch-block .switch {
         display: none;
     }
 
-    .switch + .switch-btn {
+    .switch-group .switch-container .switch-block .switch + .switch-btn {
         margin: 0;
         outline: 0;
         width: 50px;
@@ -53,7 +62,7 @@
         transition: 0.4s ease;
     }
 
-    .switch + .switch-btn:after, .switch + .switch-btn:before {
+    .switch-group .switch-container .switch-block .switch + .switch-btn:after, .switch-group .switch-container .switch-block .switch + .switch-btn:before {
         position: relative;
         display: block;
         content: "";
@@ -61,22 +70,22 @@
         height: 100%;
     }
 
-    .switch + .switch-btn:after {
+    .switch-group .switch-container .switch-block .switch + .switch-btn:after {
         left: 0;
         border-radius: 50%;
         background: #fff;
         transition: 0.2s ease;
     }
 
-    .switch + .switch-btn:before {
+    .switch-group .switch-container .switch-block .switch + .switch-btn:before {
         display: none;
     }
 
-    .switch:checked + .switch-btn {
+    .switch-group .switch-container .switch-block .switch:checked + .switch-btn {
         background: #3097D1;
     }
 
-    .switch:checked + .switch-btn:after {
+    .switch-group .switch-container .switch-block .switch:checked + .switch-btn:after {
         left: 50%;
     }
 </style>

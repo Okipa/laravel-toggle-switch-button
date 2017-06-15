@@ -2,17 +2,21 @@
     @include('toggle_switch_button::styles/toggle-switch-styles')
 @endif
 
-<div class="@if($label_icon || $label_string)input-group @endif switch-group">
+<div class="switch-group">
     @if($label_icon)
-        <span class="input-group-addon">
+        <span class="switch-icon @if($label_icon && $label_string)start @else start end @endif">
             {!! $label_icon !!}
         </span>
     @endif
     @if($label_string)
-        <span class="form-control switch-label" readonly="">
+        <span class="switch-label @if($label_icon && $label_string)end @else start end @endif" readonly="">
             {{ $label_string }}
         </span>
     @endif
-    <input class="switch" id="{{ $input_name }}" type="checkbox" name="{{ $input_name }}" @if($input_checked)checked="checked" @endif>
-    <label class="switch-btn activate" for="{{ $input_name }}"></label>
+    <div class="switch-container @if($label_icon || $label_string)space-left @endif">
+        <div class="switch-block">
+            <input class="switch" id="{{ $input_name }}" type="checkbox" name="{{ $input_name }}" @if($input_checked)checked="checked" @endif>
+            <label class="switch-btn activate" for="{{ $input_name }}"></label>
+        </div>
+    </div>
 </div>

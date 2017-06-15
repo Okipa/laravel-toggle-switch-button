@@ -18,7 +18,7 @@ $this->app->register(Okipa\LaravelToggleSwitchButton\ToggleSwitchButtonServicePr
 ```
 
 ## Usage
-Simply call the toggle switch button rendering in your view as precised in the following example :
+Simply call the toggle switch button rendering in your form as precised in the following example :
 ```
 {!! ToggleSwitchButton::render(
     'title',
@@ -54,10 +54,14 @@ Then, import the package sass in your page scss page file :
 ```
 @import '[target the root vendor directory]/okipa/laravel-toggle-switch-button/sass/toggle_switch_button';
 ```
-You can override the following sass variables **before** your sass import. Check the following example :
+You can override the following sass variables **before** your sass import. Check the following example with a bootstrap use :
 ```
+$toggle_switch_button_label_background_color: $input-group-addon-bg; // default #eeeeee
+$toggle_switch_button_label_border-color: $input-group-addon-border-color; // default #ccc
+$toggle_switch_button_label_font-size: $font-size-small; // default inherit
 $toggle_switch_button_unchecked_background-color: $input-group-addon-border-color; // default #ccc
 $toggle_switch_button_checked_background-color: $brand-primary; // default #337ab7
+$toggle_switch_button_border_radius: $btn-border-radius-base; // default 4px
 ```
 
 ## Customize the template
