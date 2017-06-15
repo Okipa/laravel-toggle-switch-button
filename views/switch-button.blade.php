@@ -1,7 +1,3 @@
-@if(config('toggle-switch-button.styles.load_from_blade'))
-    @include('toggle-switch-button::styles/styles')
-@endif
-
 <div class="switch-group">
     @if($label_icon)
         <span class="switch-icon @if($label_icon && $label_string)start @else start end @endif">

@@ -2,16 +2,19 @@
 A customizable and configurable toggle switch button generator for Laravel that enables you to simply display it on your projects pages.
 
 ## Installation
+
 1. Install the package with composer :
 ```
 composer require laravel-toggle-switch-button
 ```
+
 2. Add the package service provider in the `register()` method from your `app/Providers/AppServiceProvider.php` :
 ```
 // laravel toggle switch button
 // https://github.com/Okipa/laravel-toggle-switch-button
 $this->app->register(Okipa\LaravelToggleSwitchButton\ToggleSwitchButtonServiceProvider::class);
 ```
+
 3. Add the facade of this package to the $aliases` array of the from your `config/app.php` file :
 ```
 'ToggleSwitchButton'  => Okipa\LaravelToggleSwitchButton\Facades\ToggleSwitchButton::class,
@@ -35,24 +38,18 @@ Simply call the toggle switch button rendering in your form as precised in the f
 4. (optional) ***string*** $label_string : set the label that will appear before the toggle switch button
 
 ## Customize styles
-To customize the laravel-toggle-switch-button styles, you have 2 possible solutions :
+Include the package styles and override it.
 
-### Using inline CSS
-Publish the package blade styles file in your project :
+### CSS
+Include the package stylesheet in your project :`
 ```
-php artisan vendor:publish --tag=toggle-switch-button::styles
+<link rel="stylesheet" href="[target your composer vendor directory]/okipa/laravel-toggle-switch-button/styles/styles.css" />
 ```
-Change the CSS content from your `resources/views/toggle-switch-button/styles/styles.blade.php` file.
 
-### Importing SASS (recommended method)
-Publish the package configuration file in your project :
+### SASS
+Import the package sass in your scss page file :
 ```
-php artisan vendor:publish --tag=toggle-switch-button::config
-```
-Set the `styles.load_from_blade` value to `false` in your `config/toggle-switch-button.php` file.  
-Then, import the package sass in your page scss page file :
-```
-@import '[target the root vendor directory]/okipa/laravel-toggle-switch-button/sass/styles';
+@import '[target your composer vendor directory]/okipa/laravel-toggle-switch-button/styles/styles';
 ```
 You can override the following sass variables **before** your sass import. Check the following example with a bootstrap use :
 ```
@@ -64,9 +61,9 @@ $toggle_switch_button_checked_background-color: $brand-primary; // default #337a
 $toggle_switch_button_border_radius: $btn-border-radius-base; // default 4px
 ```
 
-## Customize the template
-Publish the package blade template file in your project :
+## Customize the templates
+Publish the package blade templates file in your project :
 ```
-php artisan vendor:publish --tag=toggle-switch-button::template
+php artisan vendor:publish --tag=toggle-switch-button::views
 ```
-Then, change the content from your `resources/views/template/toggle-switch-button.blade.php` file.  
+Then, change the content from your `resources/views/toggle-switch-button/switch-button.blade.php` file.  

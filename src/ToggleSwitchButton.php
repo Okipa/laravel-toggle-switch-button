@@ -7,18 +7,6 @@ use View;
 
 class ToggleSwitchButton
 {
-    
-    /**
-     * ToggleSwitchButton constructor.
-     */
-    public function __construct()
-    {
-        // we check the config value validity
-        if(!is_bool(config('toggle-switch-button.styles.load_from_blade'))){
-            throw new InvalidArgumentException('Wrong ' . json_encode(config('toggle-switch-button.styles.load_from_blade')) . ' value given from your "config/toggle-switch-button.php" file. The value should be "true" or "false".');
-        }
-    }
-    
     /**
      * Render a toggle switch button
      *
