@@ -52,7 +52,7 @@ php artisan vendor:publish --tag=toggle-switch-button::config
 Set the `styles.load_from_blade` value to `false` in your `config/toggle-switch-button.php` file.  
 Then, import the package sass in your page scss page file :
 ```
-@import '[target the root vendor directory]/okipa/laravel-toggle-switch-button/sass/toggle-switch-button';
+@import '[target the root vendor directory]/okipa/laravel-toggle-switch-button/sass/styles';
 ```
 You can override the following sass variables **before** your sass import. Check the following example with a bootstrap use :
 ```
