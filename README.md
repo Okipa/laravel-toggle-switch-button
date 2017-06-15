@@ -41,7 +41,7 @@ Simply call the toggle switch button rendering in your form as precised in the f
 Include the package styles and override it.
 
 ### CSS
-Include the package stylesheet in your project :`
+Include the package stylesheet in your project :
 ```
 <link rel="stylesheet" href="[target your composer vendor directory]/okipa/laravel-toggle-switch-button/styles/styles.css" />
 ```
