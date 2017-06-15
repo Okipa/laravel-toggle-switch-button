@@ -11,7 +11,7 @@ class ToggleSwitchButtonServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../views', 'toggle-switch-button');
     
         $this->publishes([
-            __DIR__ . '/../views' => resource_path('views/toggle-switch-button'),
+            __DIR__ . '/../views' => resource_path('resources/views/vendor/toggle-switch-button'),
         ], 'toggle-switch-button::views');
     }
     /**
