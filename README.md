@@ -40,7 +40,7 @@ Simply call the toggle switch button rendering in your form as precised in the f
 4. (optional) ***string*** $label_string : set the label that will appear before the toggle switch button
 
 ## Customize styles
-Include the CSS or SASS file from the `[target your composer vendor directory]/okipa/laravel-toggle-switch-button/styles` directory to your project and override it.
+Include the CSS or SASS file from the `[composer_vendor_directory]/okipa/laravel-toggle-switch-button/styles` directory to your project and override it.
 
 If you use SASS, you can override the following variables **before** the package SASS file import. Check the following example for a bootstrap use :
 ```
