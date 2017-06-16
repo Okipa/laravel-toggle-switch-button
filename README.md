@@ -38,6 +38,7 @@ Simply call the toggle switch button rendering in your form as precised in the f
 2. (optional) ***bool*** $input_checked : determine whether your toggle switch button is checked or not
 3. (optional) ***string*** $label_icon : set the icon that will appear before the toggle switch button
 4. (optional) ***string*** $label_string : set the label that will appear before the toggle switch button
+5. (optional) ***string*** $label_id : set the input id. If not filled, the input name will be used.
 
 ## Customize styles
 Include the CSS or SASS file from the `[composer_vendor_directory]/okipa/laravel-toggle-switch-button/styles` directory to your project and override it.
