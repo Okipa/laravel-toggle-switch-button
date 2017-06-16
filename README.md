@@ -26,10 +26,10 @@ $this->app->register(Okipa\LaravelToggleSwitchButton\ToggleSwitchButtonServicePr
 Simply call the toggle switch button rendering in your form as precised in the following example :
 ```
 {!! ToggleSwitchButton::render(
-    'title',
-    config('settings.image_optimization'),
-    '<i class="fa fa-compress" aria-hidden="true"></i>',
-    trans('global.action.activate')
+    'active',
+    old('active'),
+    '<i class="fa fa-power-off" aria-hidden="true"></i>',
+    'Status'
 ) !!}
 ```
 
