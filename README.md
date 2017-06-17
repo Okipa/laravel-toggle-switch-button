@@ -22,6 +22,8 @@ $this->app->register(Okipa\LaravelToggleSwitchButton\ToggleSwitchButtonServicePr
 'ToggleSwitchButton'  => Okipa\LaravelToggleSwitchButton\Facades\ToggleSwitchButton::class,
 ```
 
+4. Load the package CSS or SASS file from the `[path/to/composer/vendor]/okipa/laravel-toggle-switch-button/styles` directory to your project.
+
 ## Usage
 Simply call the toggle switch button rendering in your form as precised in the following example :
 ```
@@ -41,7 +43,7 @@ Simply call the toggle switch button rendering in your form as precised in the f
 5. (optional) ***string*** $label_id : set the input id. If not filled, the input name will be used.
 
 ## Customize styles
-Include the CSS or SASS file from the `[composer_vendor_directory]/okipa/laravel-toggle-switch-button/styles` directory to your project and override it.
+If you use CSS, just override the package styles.
 
 If you use SASS, you can override the following variables **before** the package SASS file import. Check the following example for a bootstrap use :
 ```
@@ -53,7 +55,7 @@ $toggle_switch_button_checked_background-color: $brand-primary; // default #337a
 $toggle_switch_button_border_radius: $btn-border-radius-base; // default 4px
 ```
 
-## Customize the templates
+## Customize templates
 Publish the package blade templates file in your project :
 ```
 php artisan vendor:publish --tag=toggle-switch-button::views
