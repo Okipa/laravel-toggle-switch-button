@@ -6,15 +6,14 @@ use View;
 
 class ToggleSwitchButton
 {
-    
     /**
      * Render a toggle switch button
      *
-     * @param string $input_name (required)
-     * @param bool $input_checked (optional)
-     * @param string $label_icon (optional)
-     * @param string $label_string (optional)
-     * @param string $input_id (optional)
+     * @param string $input_name    (required)
+     * @param bool   $input_checked (optional)
+     * @param string $label_icon    (optional)
+     * @param string $label_string  (optional)
+     * @param string $input_id      (optional)
      *
      * @return mixed
      */

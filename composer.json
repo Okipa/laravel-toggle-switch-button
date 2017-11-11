@@ -1,34 +1,41 @@
 {
-  "name": "okipa/laravel-toggle-switch-button",
-  "description": "A customizable toggle switch button generator for Laravel that enables you to simply display it on your projects pages.",
-  "keywords": [
-    "okipa",
-    "php",
-    "toggle",
-    "switch",
-    "button",
-    "generator",
-    "generate"
-  ],
-  "homepage": "https://github.com/Okipa/laravel-toggle-switch-button",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Arthur LORENT",
-      "email": "arthur.lorent@gmail.com",
-      "role": "Developer"
-    }
-  ],
-  "require": {
-    "php": ">=7.0",
-    "laravel/framework": "~5.0"
-  },
-  "require-dev": {
-  },
-  "autoload": {
-    "psr-4": {
-      "Okipa\\LaravelToggleSwitchButton\\": "src/"
-    }
-  },
-  "minimum-stability": "stable"
+    "name": "okipa/laravel-toggle-switch-button",
+    "description": "A customizable toggle switch button generator for Laravel that enables you to simply display it on your projects pages.",
+    "keywords": [
+        "okipa",
+        "php",
+        "toggle",
+        "switch",
+        "button",
+        "generator",
+        "generate"
+    ],
+    "homepage": "https://github.com/Okipa/laravel-toggle-switch-button",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arthur LORENT",
+            "email": "arthur.lorent@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": "~5.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Okipa\\LaravelToggleSwitchButton\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Okipa\\LaravelToggleSwitchButton\\ToggleSwitchButtonServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
 }

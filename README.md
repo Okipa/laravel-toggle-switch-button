@@ -1,4 +1,11 @@
 # laravel-toggle-switch-button
+
+[![Source Code](https://img.shields.io/badge/source-okipa/laravel--toggle--switch--button-blue.svg)](https://github.com/Okipa/laravel-bootstrap-table-list)
+[![Latest Version](https://img.shields.io/github/release/okipa/laravel-toggle-switch-button.svg?style=flat-square)](https://github.com/ACID-Solutions/input-sanitizer/releases)
+[![Total Downloads](https://img.shields.io/packagist/dt/okipa/laravel-toggle-switch-button.svg?style=flat-square)](https://packagist.org/packages/ACID-Solutions/input-sanitizer)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
 A customizable and configurable toggle switch button generator for Laravel that enables you to simply display it on your projects pages.
 
 ![Laravel Toggle Switch Button](https://raw.githubusercontent.com/Okipa/laravel-toggle-switch-button/master/img/laravel-toggle-switch-button.png)
@@ -7,27 +14,28 @@ A customizable and configurable toggle switch button generator for Laravel that 
 
 ## Installation
 
-1. Install the package with composer :
-```
+- Install the package with composer :
+```bash
 composer require okipa/laravel-toggle-switch-button
 ```
-2. Add the package service provider in the `register()` method from your `app/Providers/AppServiceProvider.php` :
-```
+- Laravel 5.5+ uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider and the Facade alias.
+If you don't use auto-discovery or if you use a Laravel 5.4- version, add the package service provider in the `register()` method from your `app/Providers/AppServiceProvider.php` :
+```php
 // laravel toggle switch button
 // https://github.com/Okipa/laravel-toggle-switch-button
 $this->app->register(Okipa\LaravelToggleSwitchButton\ToggleSwitchButtonServiceProvider::class);
 ```
-3. Add the facade of this package to the $aliases` array of the from your `config/app.php` file :
-```
+- Then, add the facade of this package to the `$aliases` array of the from your `config/app.php` file :
+```php
 'ToggleSwitchButton'  => Okipa\LaravelToggleSwitchButton\Facades\ToggleSwitchButton::class,
 ```
-4. Load the package `CSS` or `SASS` file from the `[path/to/composer/vendor]/okipa/laravel-toggle-switch-button/styles` directory to your project.
+- Load the package `SASS` or `CSS` file from the `[path/to/composer/vendor]/okipa/laravel-toggle-switch-button/styles` directory to your project.
 
 ------------------------------------------------------------------------------------------------------------------------
 
 ## Usage
 Simply call the toggle switch button rendering in your form as precised in the following example :
-```
+```php
 {!! ToggleSwitchButton::render(
     'active',
     old('active'),
@@ -49,7 +57,7 @@ Simply call the toggle switch button rendering in your form as precised in the f
 If you use `CSS`, just override the package styles.
 
 If you use `SASS`, you can override the following variables **before** the package SASS file import. Check the following example for a bootstrap use :
-```
+```sass
 $toggle_switch_button_label_background_color: $input-group-addon-bg; // default #eeeeee
 $toggle_switch_button_label_border-color: $input-group-addon-border-color; // default #ccc
 $toggle_switch_button_label_font-size: $font-size-small; // default inherit
@@ -62,7 +70,7 @@ $toggle_switch_button_border_radius: $btn-border-radius-base; // default 4px
 
 ## Customize templates
 Publish the package blade templates file in your project :
-```
+```bash
 php artisan vendor:publish --tag=toggle-switch-button::views
 ```
 Then, change the content from your `resources/views/vendor/toggle-switch-button/switch-button.blade.php` file.  
