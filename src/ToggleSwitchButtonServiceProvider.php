@@ -14,10 +14,10 @@ class ToggleSwitchButtonServiceProvider extends ServiceProvider
             __DIR__ . '/../views' => resource_path('views/vendor/toggle-switch-button'),
         ], 'toggle-switch-button::views');
     }
-    
+
     public function register()
     {
-        $this->app->singleton('toggle-switch-button', function (Application $app) {
+        $this->app->singleton('toggle-switch-button', function(Application $app) {
             return $app->make(ToggleSwitchButton::class);
         });
     }
