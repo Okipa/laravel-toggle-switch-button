@@ -3,12 +3,15 @@
     "description": "A customizable toggle switch button generator for Laravel that enables you to simply display it on your projects pages.",
     "keywords": [
         "okipa",
+        "laravel",
         "php",
         "toggle",
         "switch",
         "button",
+        "generate",
         "generator",
-        "generate"
+        "generation",
+        "html"
     ],
     "homepage": "https://github.com/Okipa/laravel-toggle-switch-button",
     "license": "MIT",
