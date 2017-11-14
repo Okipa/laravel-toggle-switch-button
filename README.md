@@ -46,10 +46,10 @@ Simply call the toggle switch button rendering in your form as precised in the f
 ```
 
 **Parameters :**
-1. (required) ***string*** $input_name : set the input name. Also used by default for the input id.
-2. (optional) ***bool*** $input_checked : determine whether your toggle switch button is checked or not.
-3. (optional) ***string*** $label_icon : set the icon that will appear before the toggle switch button.
-4. (optional) ***string*** $label_string : set the label that will appear before the toggle switch button.
+1. (required) ***string*** $inputName : set the input name. Also used by default for the input id.
+2. (optional) ***bool*** $inputChecked : determine whether your toggle switch button is checked or not.
+3. (optional) ***string*** $labelIcon : set the icon that will appear before the toggle switch button.
+4. (optional) ***string*** $labelString : set the label that will appear before the toggle switch button.
 5. (optional) ***string*** $label_id : set the input id. If not filled, the input name will be used.
 
 ------------------------------------------------------------------------------------------------------------------------
