@@ -10,12 +10,12 @@ class ToggleSwitchButton
      * Render a toggle switch button
      *
      * @param string $inputName    (required)
-     * @param bool   $inputChecked (optional)
-     * @param string $labelIcon    (optional)
-     * @param string $labelString  (optional)
-     * @param string $inputId      (optional)
+     * @param null|bool   $inputChecked (optional)
+     * @param null|string $labelIcon    (optional)
+     * @param null|string $labelString  (optional)
+     * @param null|string $inputId      (optional)
      *
-     * @return mixed
+     * @return string
      */
     public function render(
         string $inputName,
