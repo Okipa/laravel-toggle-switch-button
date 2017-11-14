@@ -61,10 +61,10 @@ If you use `CSS`, just override the package styles.
 If you use `SASS`, you can override the following variables **before** the package SASS file import. Check the following example for a bootstrap use :
 ```sass
 $toggle_switch_button_label_background_color: $input-group-addon-bg; // default #eeeeee
-$toggle_switch_button_label_border-color: $input-group-addon-border-color; // default #ccc
-$toggle_switch_button_label_font-size: $font-size-small; // default inherit
-$toggle_switch_button_unchecked_background-color: $input-group-addon-border-color; // default #ccc
-$toggle_switch_button_checked_background-color: $brand-primary; // default #337ab7
+$toggle_switch_button_label_border_color: $input-group-addon-border-color; // default #ccc
+$toggle_switch_button_label_font_size: $font-size-small; // default inherit
+$toggle_switch_button_unchecked_background_color: $input-group-addon-border-color; // default #ccc
+$toggle_switch_button_unchecked_background_color: $brand-primary; // default #337ab7
 $toggle_switch_button_border_radius: $btn-border-radius-base; // default 4px
 ```
 
