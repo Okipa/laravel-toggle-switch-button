@@ -51,7 +51,7 @@ Simply call the toggle switch button rendering in your form as precised in the f
 2. (optional) ***bool*** $inputChecked : determine whether your toggle switch button is checked or not.
 3. (optional) ***string*** $labelIcon : set the icon that will appear before the toggle switch button.
 4. (optional) ***string*** $labelString : set the label that will appear before the toggle switch button.
-5. (optional) ***string*** $label_id : set the input id. If not filled, the input name will be used.
+5. (optional) ***string*** $inputId : set the input id. If not filled, the input name will be used.
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -64,7 +64,7 @@ $toggle_switch_button_label_background_color: $input-group-addon-bg; // default 
 $toggle_switch_button_label_border_color: $input-group-addon-border-color; // default #ccc
 $toggle_switch_button_label_font_size: $font-size-small; // default inherit
 $toggle_switch_button_unchecked_background_color: $input-group-addon-border-color; // default #ccc
-$toggle_switch_button_unchecked_background_color: $brand-primary; // default #337ab7
+$toggle_switch_button_checked_background_color: $brand-primary; // default #337ab7
 $toggle_switch_button_border_radius: $btn-border-radius-base; // default 4px
 ```
 
