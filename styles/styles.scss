@@ -98,7 +98,7 @@ $toggle_switch_button_label_border_radius: 4px !default;
         &:checked {
 
           + .switch-btn {
-            background: $toggle_switch_button_unchecked_background_color;
+            background: $toggle_switch_button_checked_background_color;
 
             &:after {
               left: 50%;
