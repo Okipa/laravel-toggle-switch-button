@@ -7,7 +7,6 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Okipa/laravel-toggle-switch-button/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Okipa/laravel-toggle-switch-button/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/82184641-d649-4517-a593-d2859d8470c8/small.png)](https://insight.sensiolabs.com/projects/82184641-d649-4517-a593-d2859d8470c8)
 
-
 A customizable and configurable toggle switch button generator for Laravel that enables you to simply display it on your projects pages.
 
 ![Laravel Toggle Switch Button](https://raw.githubusercontent.com/Okipa/laravel-toggle-switch-button/master/img/laravel-toggle-switch-button.png)
