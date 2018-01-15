@@ -1,8 +1,8 @@
 # laravel-toggle-switch-button
 
 [![Source Code](https://img.shields.io/badge/source-okipa/laravel--toggle--switch--button-blue.svg)](https://github.com/Okipa/laravel-bootstrap-table-list)
-[![Latest Version](https://img.shields.io/github/release/okipa/laravel-toggle-switch-button.svg?style=flat-square)](https://github.com/ACID-Solutions/input-sanitizer/releases)
-[![Total Downloads](https://img.shields.io/packagist/dt/okipa/laravel-toggle-switch-button.svg?style=flat-square)](https://packagist.org/packages/ACID-Solutions/input-sanitizer)
+[![Latest Version](https://img.shields.io/github/release/okipa/laravel-toggle-switch-button.svg?style=flat-square)](https://github.com/Okipa/laravel-toggle-switch-button/releases)
+[![Total Downloads](https://img.shields.io/packagist/dt/okipa/laravel-toggle-switch-button.svg?style=flat-square)](https://packagist.org/packages/okipa/laravel-toggle-switch-button)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Okipa/laravel-toggle-switch-button/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Okipa/laravel-toggle-switch-button/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/82184641-d649-4517-a593-d2859d8470c8/small.png)](https://insight.sensiolabs.com/projects/82184641-d649-4517-a593-d2859d8470c8)
