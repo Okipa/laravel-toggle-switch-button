@@ -9,28 +9,28 @@ class ToggleSwitchButton
     /**
      * Render a toggle switch button
      *
-     * @param string $input_name    (required)
-     * @param bool   $input_checked (optional)
-     * @param string $label_icon    (optional)
-     * @param string $label_string  (optional)
-     * @param string $input_id      (optional)
+     * @param string $inputName    (required)
+     * @param null|bool   $inputChecked (optional)
+     * @param null|string $labelIcon    (optional)
+     * @param null|string $labelString  (optional)
+     * @param null|string $inputId      (optional)
      *
-     * @return mixed
+     * @return string
      */
     public function render(
-        string $input_name,
-        bool $input_checked = null,
-        string $label_icon = null,
-        string $label_string = null,
-        string $input_id = null
+        string $inputName,
+        bool $inputChecked = null,
+        string $labelIcon = null,
+        string $labelString = null,
+        string $inputId = null
     ) {
         // we return the generated html from the blade file
         return View::make('toggle-switch-button::switch-button', [
-            'input_name'    => $input_name,
-            'input_checked' => $input_checked,
-            'label_icon'    => $label_icon,
-            'label_string'  => $label_string,
-            'input_id'      => $input_id,
+            'inputName'    => $inputName,
+            'inputChecked' => $inputChecked,
+            'labelIcon'    => $labelIcon,
+            'labelString'  => $labelString,
+            'inputId'      => $inputId,
         ])->render();
     }
 }

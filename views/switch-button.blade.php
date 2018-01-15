@@ -1,18 +1,18 @@
 <div class="switch-group">
-    @if($label_icon)
-        <span class="switch-icon @if($label_icon && $label_string)start @else start end @endif">
-            {!! $label_icon !!}
+    @if($labelIcon)
+        <span class="switch-icon @if($labelIcon && $labelString)start @else start end @endif">
+            {!! $labelIcon !!}
         </span>
     @endif
-    @if($label_string)
-        <span class="switch-label @if($label_icon && $label_string)end @else start end @endif" readonly="">
-            {{ $label_string }}
+    @if($labelString)
+        <span class="switch-label @if($labelIcon && $labelString)end @else start end @endif" readonly="">
+            {{ $labelString }}
         </span>
     @endif
-    <div class="switch-container @if($label_icon || $label_string)space-left @endif">
+    <div class="switch-container @if($labelIcon || $labelString)space-left @endif">
         <div class="switch-block">
-            <input class="switch" id="{{ $input_id ? $input_id : $input_name }}" type="checkbox" name="{{ $input_name }}" @if($input_checked)checked="checked" @endif>
-            <label class="switch-btn activate" for="{{ $input_id ? $input_id : $input_name }}"></label>
+            <input class="switch" id="{{ $inputId ? $inputId : $inputName }}" type="checkbox" name="{{ $inputName }}" @if($inputChecked)checked="checked" @endif>
+            <label class="switch-btn activate" for="{{ $inputId ? $inputId : $inputName }}"></label>
         </div>
     </div>
 </div>
