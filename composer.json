@@ -38,7 +38,10 @@
         "laravel": {
             "providers": [
                 "Okipa\\LaravelToggleSwitchButton\\ToggleSwitchButtonServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "ToggleSwitchButton": "Okipa\\LaravelToggleSwitchButton\\Facades\\ToggleSwitchButton"
+            }
         }
     },
     "minimum-stability": "stable"
