@@ -58,12 +58,14 @@ If you use `CSS`, just override the package styles.
 
 If you use `SASS`, you can override the following variables **before** the package SASS file import. Check the following example for a bootstrap use :
 ```sass
-$toggle_switch_button_label_background_color: $input-group-addon-bg; // default #eeeeee
-$toggle_switch_button_label_border_color: $input-group-addon-border-color; // default #ccc
-$toggle_switch_button_label_font_size: $font-size-small; // default inherit
-$toggle_switch_button_unchecked_background_color: $input-group-addon-border-color; // default #ccc
-$toggle_switch_button_checked_background_color: $brand-primary; // default #337ab7
-$toggle_switch_button_border_radius: $btn-border-radius-base; // default 4px
+// bootstrap 4 example
+$toggle_switch_button_label_background_color: $input-group-addon-bg;
+$toggle_switch_button_label_border_color: $input-group-addon-border-color;
+$toggle_switch_button_label_font_size: $font-size-base;
+$toggle_switch_button_unchecked_background_color: $input-group-addon-border-color;
+$toggle_switch_button_checked_background_color: $primary;
+$toggle_switch_button_border_radius: $btn-border-radius;
+@import '[path/to/composer/vendor]/okipa/laravel-toggle-switch-button/styles/styles';
 ```
 
 ------------------------------------------------------------------------------------------------------------------------
