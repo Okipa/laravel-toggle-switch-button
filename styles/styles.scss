@@ -1,9 +1,9 @@
-$toggle_switch_button_label_background_color: #eeeeee !default;
-$toggle_switch_button_label_border_color: #ccc !default;
-$toggle_switch_button_label_font_size: inherit !default;
-$toggle_switch_button_unchecked_background_color: #ccc !default;
-$toggle_switch_button_checked_background_color: #337ab7 !default;
-$toggle_switch_button_label_border_radius: 4px !default;
+$toggle-switch-button-label-background-color: #eeeeee !default;
+$toggle-switch-button-label-border-color: #ccc !default;
+$toggle-switch-button-label-font-size: inherit !default;
+$toggle-switch-button-unchecked-background-color: #ccc !default;
+$toggle-switch-button-checked-background-color: #337ab7 !default;
+$toggle-switch-button-label-border-radius: 4px !default;
 
 .switch-group {
   position: relative;
@@ -11,28 +11,28 @@ $toggle_switch_button_label_border_radius: 4px !default;
 
   .switch-icon {
     display: table-cell;
-    border: 1px solid $toggle_switch_button_label_border_color;
-    background-color: $toggle_switch_button_label_background_color;
-    font-size: $toggle_switch_button_label_font_size;
+    border: 1px solid $toggle-switch-button-label-border-color;
+    background-color: $toggle-switch-button-label-background-color;
+    font-size: $toggle-switch-button-label-font-size;
     padding: 6px 12px;
     vertical-align: middle;
 
     &.end {
-      -webkit-border-top-right-radius: $toggle_switch_button_label_border_radius;
-      -moz-border-radius-topright: $toggle_switch_button_label_border_radius;
-      border-top-right-radius: $toggle_switch_button_label_border_radius;
-      -webkit-border-bottom-right-radius: $toggle_switch_button_label_border_radius;
-      -moz-border-radius-bottomright: $toggle_switch_button_label_border_radius;
-      border-bottom-right-radius: $toggle_switch_button_label_border_radius;
+      -webkit-border-top-right-radius: $toggle-switch-button-label-border-radius;
+      -moz-border-radius-topright: $toggle-switch-button-label-border-radius;
+      border-top-right-radius: $toggle-switch-button-label-border-radius;
+      -webkit-border-bottom-right-radius: $toggle-switch-button-label-border-radius;
+      -moz-border-radius-bottomright: $toggle-switch-button-label-border-radius;
+      border-bottom-right-radius: $toggle-switch-button-label-border-radius;
     }
 
     &.start {
-      -webkit-border-top-left-radius: $toggle_switch_button_label_border_radius;
-      -moz-border-radius-topleft: $toggle_switch_button_label_border_radius;
-      border-top-left-radius: $toggle_switch_button_label_border_radius;
-      -webkit-border-bottom-left-radius: $toggle_switch_button_label_border_radius;
-      -moz-border-radius-bottomleft: $toggle_switch_button_label_border_radius;
-      border-bottom-left-radius: $toggle_switch_button_label_border_radius;
+      -webkit-border-top-left-radius: $toggle-switch-button-label-border-radius;
+      -moz-border-radius-topleft: $toggle-switch-button-label-border-radius;
+      border-top-left-radius: $toggle-switch-button-label-border-radius;
+      -webkit-border-bottom-left-radius: $toggle-switch-button-label-border-radius;
+      -moz-border-radius-bottomleft: $toggle-switch-button-label-border-radius;
+      border-bottom-left-radius: $toggle-switch-button-label-border-radius;
 
       + .end {
         border-left: none;
@@ -66,7 +66,7 @@ $toggle_switch_button_label_border_radius: 4px !default;
           position: relative;
           cursor: pointer;
           user-select: none;
-          background: $toggle_switch_button_unchecked_background_color;
+          background: $toggle-switch-button-unchecked-background-color;
           border-radius: 2em;
           padding: 2px;
           -webkit-transition: 0.4s ease;
@@ -98,7 +98,7 @@ $toggle_switch_button_label_border_radius: 4px !default;
         &:checked {
 
           + .switch-btn {
-            background: $toggle_switch_button_checked_background_color;
+            background: $toggle-switch-button-checked-background-color;
 
             &:after {
               left: 50%;
