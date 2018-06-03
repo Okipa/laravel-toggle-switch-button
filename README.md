@@ -18,17 +18,15 @@ A customizable and configurable toggle switch button generator for Laravel that 
 - [V1](https://github.com/Okipa/laravel-toggle-switch-button/tree/v1) : `composer require okipa/laravel-toggle-switch-button:^1.0.0`
 - [V2](https://github.com/Okipa/laravel-toggle-switch-button/tree/v2) : `composer require okipa/laravel-toggle-switch-button:^2.0.0`
 
-- Install the package with composer :
-```bash
-composer require okipa/laravel-toggle-switch-button
-```
-- Laravel 5.5+ uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider and the Facade alias.
-If you don't use auto-discovery or if you use a Laravel 5.4- version, add the package service provider in the `register()` method from your `app/Providers/AppServiceProvider.php` :
+### For Laravel >=5.4 only
+Add the package service provider in the `register()` method from your `app/Providers/AppServiceProvider.php` :
 ```php
 // laravel toggle switch button
 // https://github.com/Okipa/laravel-toggle-switch-button
 $this->app->register(Okipa\LaravelToggleSwitchButton\ToggleSwitchButtonServiceProvider::class);
 ```
+
+### Styles import
 - Load the package `SASS` or `CSS` file from the `[path/to/composer/vendor]/okipa/laravel-toggle-switch-button/styles` directory to your project.
 
 ------------------------------------------------------------------------------------------------------------------------
