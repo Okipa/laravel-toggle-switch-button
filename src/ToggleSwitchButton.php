@@ -83,11 +83,13 @@ class ToggleSwitchButton implements Htmlable
     /**
      * Set the toggle checked status.
      *
+     * @param bool $checked
+     *
      * @return \Okipa\LaravelToggleSwitchButton\ToggleSwitchButton
      */
-    public function checked(): ToggleSwitchButton
+    public function checked(bool $checked): ToggleSwitchButton
     {
-        $this->checked = true;
+        $this->checked = $checked;
 
         return $this;
     }

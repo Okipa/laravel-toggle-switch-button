@@ -25,31 +25,26 @@ If you don't use auto-discovery or if you use a Laravel 5.4- version, add the pa
 // https://github.com/Okipa/laravel-toggle-switch-button
 $this->app->register(Okipa\LaravelToggleSwitchButton\ToggleSwitchButtonServiceProvider::class);
 ```
-- Then, add the facade of this package to the `$aliases` array of the from your `config/app.php` file :
-```php
-'ToggleSwitchButton'  => Okipa\LaravelToggleSwitchButton\Facades\ToggleSwitchButton::class,
-```
 - Load the package `SASS` or `CSS` file from the `[path/to/composer/vendor]/okipa/laravel-toggle-switch-button/styles` directory to your project.
 
 ------------------------------------------------------------------------------------------------------------------------
 
 ## Usage
-Simply call the toggle switch button rendering in your form as precised in the following example :
+Since the toggle switch button implements the `Htmlable` interface, just call it this way in your blade file :
 ```php
-{!! ToggleSwitchButton::render(
-    'active',
-    old('active'),
-    '<i class="fa fa-power-off" aria-hidden="true"></i>',
-    'Status'
-) !!}
+{{ toggleSwitchButton()
+    ->name('active')
+    ->checked(old('active') or $model->active)
+    ->icon('<i class="fas fa-power-off"></i>')
+    ->label('Activation') }}
 ```
 
-**Parameters :**
-1. (required) ***string*** $inputName : set the input name. Also used by default for the input id.
-2. (optional) ***bool*** $inputChecked : determine whether your toggle switch button is checked or not.
-3. (optional) ***string*** $labelIcon : set the icon that will appear before the toggle switch button.
-4. (optional) ***string*** $labelString : set the label that will appear before the toggle switch button.
-5. (optional) ***string*** $inputId : set the input id. If not filled, the input name will be used.
+------------------------------------------------------------------------------------------------------------------------
+
+## API
+
+Public methods
+See the available public methods in the [ToggleSwitchButton class](https://github.com/Okipa/laravel-toggle-switch-button/blob/master/src/ToggleSwitchButton.php)
 
 ------------------------------------------------------------------------------------------------------------------------
 
