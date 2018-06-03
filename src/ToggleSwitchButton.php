@@ -3,16 +3,9 @@
 namespace Okipa\LaravelToggleSwitchButton;
 
 use Illuminate\Contracts\Support\Htmlable;
-use Illuminate\Database\Eloquent\Model;
 
 class ToggleSwitchButton implements Htmlable
 {
-    /**
-     * The toggle associated model.
-     *
-     * @property \Illuminate\Database\Eloquent\Model $model
-     */
-    protected $model;
     /**
      * The toggle name.
      *
@@ -37,20 +30,6 @@ class ToggleSwitchButton implements Htmlable
      * @property string $checked
      */
     protected $checked = false;
-
-    /**
-     * Set the toggle associated model.
-     *
-     * @param \Illuminate\Database\Eloquent\Model $model
-     *
-     * @return \Okipa\LaravelToggleSwitchButton\ToggleSwitchButton
-     */
-    public function model(Model $model): ToggleSwitchButton
-    {
-        $this->model = $model;
-
-        return $this;
-    }
 
     /**
      * Set the toggle name.
