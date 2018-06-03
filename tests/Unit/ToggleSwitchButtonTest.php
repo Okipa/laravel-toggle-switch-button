@@ -8,7 +8,7 @@ class ToggleSwitchButtonTest extends ToggleSwitchButtonTestCase
 {
     public function testToggleSwitchButtonHtmlRenderingWithAllAttributes()
     {
-        $html = toggleSwitchButton()->name('test_name')->checked()->icon('test-icon')->label('test-label')->toHtml();
+        $html = toggleSwitchButton()->name('test_name')->checked(true)->icon('test-icon')->label('test-label')->toHtml();
         $this->assertEquals(view('toggle-switch-button::switch-button', [
             'name'    => 'test_name',
             'checked' => true,
@@ -41,7 +41,7 @@ class ToggleSwitchButtonTest extends ToggleSwitchButtonTestCase
 
     public function testToggleSwitchButtonHtmlRenderingWWithCheckStatus()
     {
-        $html = toggleSwitchButton()->checked()->toHtml();
+        $html = toggleSwitchButton()->checked(true)->toHtml();
         $this->assertEquals(view('toggle-switch-button::switch-button', [
             'name'    => null,
             'checked' => true,
