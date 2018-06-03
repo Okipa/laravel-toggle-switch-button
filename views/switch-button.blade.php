@@ -1,18 +1,22 @@
 <div class="switch-group">
-    @if($labelIcon)
-        <span class="switch-icon @if($labelIcon && $labelString)start @else start end @endif">
-            {!! $labelIcon !!}
+    @if($icon)
+        <span class="switch-icon @if($icon && $label)start @else()start end @endif">
+            {!! $icon !!}
         </span>
     @endif
-    @if($labelString)
-        <span class="switch-label @if($labelIcon && $labelString)end @else start end @endif" readonly="">
-            {{ $labelString }}
+    @if($label)
+        <span class="switch-label @if($icon && $label)end @else()start end @endif">
+            {{ $label }}
         </span>
     @endif
-    <div class="switch-container @if($labelIcon || $labelString)space-left @endif">
+    <div class="switch-container @if($icon || $label)space-left @endif">
         <div class="switch-block">
-            <input class="switch" id="{{ $inputId ? $inputId : $inputName }}" type="checkbox" name="{{ $inputName }}" @if($inputChecked)checked="checked" @endif>
-            <label class="switch-btn activate" for="{{ $inputId ? $inputId : $inputName }}"></label>
+            <input class="switch"
+                   id="toggle-switch-{{ $name }}"
+                   type="checkbox"
+                   name="{{ $name }}"
+                   @if($checked)checked="checked"@endif>
+            <label class="switch-btn activate" for="toggle-switch-{{ $name }}"></label>
         </div>
     </div>
 </div>
