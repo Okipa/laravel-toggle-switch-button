@@ -14,6 +14,10 @@ A customizable and configurable toggle switch button generator for Laravel that 
 
 ## Installation
 
+### Versions
+- [V1](https://github.com/Okipa/laravel-toggle-switch-button/tree/v1) : `composer require okipa/laravel-toggle-switch-button:^1.0.0`
+- [V2](https://github.com/Okipa/laravel-toggle-switch-button/tree/v2) : `composer require okipa/laravel-toggle-switch-button:^2.0.0`
+
 - Install the package with composer :
 ```bash
 composer require okipa/laravel-toggle-switch-button
