@@ -106,7 +106,7 @@ class ToggleSwitchButton implements Htmlable
      */
     public function render()
     {
-        return view('toggle-switch-button::switch-button', [
+        return view('toggle-switch-button::components.toggle-switch-button', [
             'name'    => $this->name,
             'checked' => $this->checked,
             'icon'    => $this->icon,
