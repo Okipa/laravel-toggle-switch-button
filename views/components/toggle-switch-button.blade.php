@@ -11,11 +11,11 @@
     @endif
     <div {{ classTag('switch-container', $icon || $label ? 'space-left' : null) }}>
         <div class="switch-block">
-            <input class="switch"
-                   id="toggle-{{ $name }}"
+            <input id="toggle-{{ $name }}"
+                   class="switch"
                    type="checkbox"
                    name="{{ $name }}"
-                   {{ htmlAttributes($checked ? ['checked' => 'checked'] : null) }}>
+                {{ htmlAttributes($checked ? ['checked' => 'checked'] : null) }}>
             <label class="switch-btn activate" for="toggle-{{ $name }}"></label>
         </div>
     </div>
