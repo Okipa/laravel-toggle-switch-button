@@ -26,6 +26,8 @@ abstract class ToggleSwitchButtonTestCase extends TestCase
      */
     protected function getPackageProviders($app)
     {
-        return [ToggleSwitchButtonServiceProvider::class];
+        return [
+            ToggleSwitchButtonServiceProvider::class,
+        ];
     }
 }

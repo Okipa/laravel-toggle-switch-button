@@ -1,22 +1,22 @@
 <div class="switch-group">
     @if($icon)
-        <span class="switch-icon @if($icon && $label)start @else()start end @endif">
+        <span {{ classTag('switch-icon', $icon && $label ? 'start' : ['start', 'end']) }}>
             {!! $icon !!}
         </span>
     @endif
     @if($label)
-        <span class="switch-label @if($icon && $label)end @else()start end @endif">
+        <span {{ classTag('switch-label', $icon && $label ? 'end' : ['start', 'end']) }}>
             {{ $label }}
         </span>
     @endif
-    <div class="switch-container @if($icon || $label)space-left @endif">
+    <div {{ classTag('switch-container', $icon || $label ? 'space-left' : null) }}>
         <div class="switch-block">
             <input class="switch"
-                   id="toggle-switch-{{ $name }}"
+                   id="toggle-{{ $name }}"
                    type="checkbox"
                    name="{{ $name }}"
-                   @if($checked)checked="checked"@endif>
-            <label class="switch-btn activate" for="toggle-switch-{{ $name }}"></label>
+                   {{ htmlAttributes($checked ? ['checked' => 'checked'] : null) }}>
+            <label class="switch-btn activate" for="toggle-{{ $name }}"></label>
         </div>
     </div>
 </div>

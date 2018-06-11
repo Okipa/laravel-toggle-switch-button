@@ -74,3 +74,10 @@ Publish the package blade templates file in your project :
 php artisan vendor:publish --tag=toggle-switch-button::views
 ```
 Then, change the content from your `resources/views/vendor/components/switch-button.blade.php` file.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+## Contributors
+
+- [ACID-Solutions](https://github.com/ACID-Solutions)
