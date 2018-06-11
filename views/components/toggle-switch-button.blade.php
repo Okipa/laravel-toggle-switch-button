@@ -1,13 +1,9 @@
 <div class="switch-group">
     @if($icon)
-        <span {{ classTag('switch-icon', $icon && $label ? 'start' : ['start', 'end']) }}>
-            {!! $icon !!}
-        </span>
+        <span {{ classTag('switch-icon', $icon && $label ? 'start' : ['start', 'end']) }}>{!! $icon !!}</span>
     @endif
     @if($label)
-        <span {{ classTag('switch-label', $icon && $label ? 'end' : ['start', 'end']) }}>
-            {{ $label }}
-        </span>
+        <span {{ classTag('switch-label', $icon && $label ? 'end' : ['start', 'end']) }}>{{ $label }}</span>
     @endif
     <div {{ classTag('switch-container', $icon || $label ? 'space-left' : null) }}>
         <div class="switch-block">
