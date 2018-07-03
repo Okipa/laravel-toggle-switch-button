@@ -1,5 +1,7 @@
 # laravel-toggle-switch-button
 
+## Package abandonned in profit of https://github.com/Okipa/laravel-bootstrap-components package.
+
 [![Source Code](https://img.shields.io/badge/source-okipa/laravel--toggle--switch--button-blue.svg)](https://github.com/Okipa/laravel-toggle-switch-button)
 [![Latest Version](https://img.shields.io/github/release/okipa/laravel-toggle-switch-button.svg?style=flat-square)](https://github.com/Okipa/laravel-toggle-switch-button/releases)
 [![Total Downloads](https://img.shields.io/packagist/dt/okipa/laravel-toggle-switch-button.svg?style=flat-square)](https://packagist.org/packages/okipa/laravel-toggle-switch-button)
